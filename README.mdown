@@ -1,6 +1,6 @@
 #Picard Resources
 
-Inspired by http://github.com/nateware/sinatra-resources
+Inspired by [http://github.com/nateware/sinatra-resources](http://github.com/nateware/sinatra-resources/ "Sinatra Resources")
 
 1. You'll need my fork of picard (until it hopefully gets pulled)
 2. `export NODE_PATH=/path/to/picard/lib`
@@ -36,5 +36,8 @@ And behold:
         this.del(function(params) {
           return {text: "DELETE Project No. " + params.project_id}
         })
+
       })
     })
+
+Check out specs in sample_app/spec for more details.
