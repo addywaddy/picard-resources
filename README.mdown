@@ -1,0 +1,36 @@
+#Picard Resources
+
+Inspired by http://github.com/nateware/sinatra-resources
+
+Behold:
+
+    resource("projects", function() {
+
+      // GET: /projects
+      this.get(function() {
+        return {text: "Projects"}
+      })
+
+      // POST: /projects
+      this.post(function() {
+        return {text: "POST Projects"}
+      })
+
+      this.member(":project_id", function() {
+
+        // GET: /projects/1
+        this.get(function(params) {
+          return {text: "GET Project No. " + params.project_id}
+        })
+
+        // PUT: /projects/1
+        this.put(function(params) {
+          return {text: "PUT Project No. " + params.project_id}
+        })
+
+        // DELETE: /projects/1
+        this.del(function(params) {
+          return {text: "DELETE Project No. " + params.project_id}
+        })
+      })
+    })
