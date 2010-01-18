@@ -2,7 +2,11 @@
 
 Inspired by http://github.com/nateware/sinatra-resources
 
-Behold:
+1. You'll need my fork of picard (until it hopefully gets pulled)
+2. `export NODE_PATH=/path/to/picard/lib`
+3. `node sample_app/node.js`
+
+And behold:
 
     resource("projects", function() {
 
